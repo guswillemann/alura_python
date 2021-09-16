@@ -16,13 +16,13 @@ class game_instance:
   def setup(self):
     self.create_secret()
     self.set_players()
-    if self.players == 1: self.set_difficulty()
+    if (self.players == 1): self.set_difficulty()
 
   def start(self, replay = False):
-    if not replay == 'replay': display_welcome()
+    if (not replay == 'replay'): display_welcome()
     self.setup()
     
-    if self.players == 1: self.play_single()
+    if (self.players == 1): self.play_single()
     else: self.play_multi()
 
     self.end()
@@ -36,7 +36,7 @@ class game_instance:
     print(end_text)
 
     replay = query_replay()
-    if replay: self.start('replay')
+    if (replay): self.start('replay')
 
   def play_single(self):
     guesses_total = self.guesses_total
@@ -50,15 +50,15 @@ class game_instance:
       is_higher_guess = guess > secret_number
       is_last_guess = guesses_current == guesses_total
 
-      if is_right_guess:
+      if (is_right_guess):
         print('You won!!!')
         break
       
-      if is_last_guess:
-        print(f'You LOSE!!! The number was {secret_number}')
+      if (is_last_guess):
+        print(f'You LOST!!! The number was {secret_number}')
         break
       
-      if is_higher_guess: self.wrong_guess('higher', guess)
+      if (is_higher_guess): self.wrong_guess('higher', guess)
       else: self.wrong_guess('lower', guess)
 
   def play_multi(self):
@@ -67,7 +67,7 @@ class game_instance:
     players_list = deepcopy(self.players_tags)
     current_round = 1
 
-    while len(players_list) > 1:
+    while (len(players_list) > 1):
       new_players_list = []
       print(f'\nRound: {current_round}')
       for i in players_list:
@@ -77,14 +77,14 @@ class game_instance:
         is_right_guess = guess == self.secret_number
         is_higher_guess = guess > self.secret_number
 
-        if is_right_guess:
+        if (is_right_guess):
           print('Your guess is right!!!')
           new_players_list.append(i)
 
-        elif is_higher_guess: self.wrong_guess('higher')
+        elif (is_higher_guess): self.wrong_guess('higher')
         else: self.wrong_guess('lower')
 
-      if len(new_players_list) > 0:
+      if (len(new_players_list) > 0):
         current_round = current_round + 1
         players_list = new_players_list
         self.create_secret()
@@ -105,10 +105,10 @@ class game_instance:
   
   def set_players(self):
     self.players = query_player_quantity()
-    if self.players > 1:
+    if (self.players > 1):
       self.players_tags = query_player_tags(self.players)
 
   def wrong_guess(self, message, guess = 0):
-    if self.players == 1:
+    if (self.players == 1):
       self.score = self.score - abs(self.secret_number - guess)
     print(f'Wrong!!! Your guess is {message}')

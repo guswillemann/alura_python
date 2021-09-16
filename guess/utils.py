@@ -23,7 +23,7 @@ def query_difficulty():
   input_options = ['1', '2', '3']
   input_attempts = 0
 
-  while not difficulty_input_str in input_options:
+  while (not difficulty_input_str in input_options):
     # message_type = 'calm' if input_tentatives < 5 else 'impatient' if input_tentatives < 15 else 'furious'
 
     message_type = (
@@ -51,7 +51,7 @@ def query_guess(is_multiplayer = False):
     print(error_messages['guess']['not_a_number'])
     guess = query_guess(is_multiplayer)
 
-  if guess < 1 or guess > 100:
+  if (guess < 1 or guess > 100):
     print(error_messages['guess']['out_of_range'])
     guess = query_guess(is_multiplayer)
   
@@ -67,18 +67,18 @@ def query_replay():
     replay_input_str == ''
   ):
     return True
-  elif not replay_input_str == 'n':
+  elif (not replay_input_str == 'n'):
     return query_replay()
   
   return False
 
 def query_player_quantity(message = ''):
-  if message: print(message)
+  if (message): print(message)
   quantity_input_str = input('How many players? ')
 
   try:
     quantity = int(quantity_input_str)
-    if quantity > 0: return quantity
+    if (quantity > 0): return quantity
     return query_player_quantity(error_messages['players'])
   except:
     return query_player_quantity(error_messages['players'])

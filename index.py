@@ -3,7 +3,7 @@ import importlib
 game_options = ['guess']
 selected_game = 'guess'
 
-while not selected_game in game_options:
+while (not selected_game in game_options):
   print(f'Game options: {game_options}')
   selected_game = input('Select: ')
 
