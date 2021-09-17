@@ -1,7 +1,7 @@
 import importlib
 
-game_options = ['guess']
-selected_game = 'guess'
+game_options = ['guess', 'hangman']
+selected_game = ''
 
 while (not selected_game in game_options):
   print(f'Game options: {game_options}')
