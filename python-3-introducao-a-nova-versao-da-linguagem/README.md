@@ -1,6 +1,6 @@
-# Python 3 Cursos Introdutórios
+# Python 3: Cursos Introdutórios
 
-O projeto deste repositório é o conjunto dos projetos elaborados durante os cursos introdutórios da linguagem:
+Repositório do conjunto de projetos elaborados durante os cursos introdutórios da linguagem:
 
 - [Python 3 parte 1: Introdução à nova versão da linguagem](https://cursos.alura.com.br/course/python-3-introducao-a-nova-versao-da-linguagem)
 

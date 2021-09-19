@@ -1,6 +1,6 @@
-# Python 3 Introdução a Orientação a objetos
+# Python 3: Introdução a Orientação a objetos
 
-O projeto deste repositório é o conjunto dos projetos elaborados durante o curso:
+Repositório do conjunto de projetos elaborados durante o curso:
 
 - [Python 3: Introdução a Orientação a objetos](https://cursos.alura.com.br/course/python-3-intro-orientacao-objetos)
 
