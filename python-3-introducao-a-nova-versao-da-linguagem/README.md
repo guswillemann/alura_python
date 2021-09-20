@@ -13,12 +13,12 @@ Repositório do conjunto de projetos elaborados durante os cursos introdutórios
 <br />
 
 <a href="https://cursos.alura.com.br/certificate/gustavo-willemann/python-3-introducao-a-nova-versao-da-linguagem">
-  <img src=".github/certificado_parte_1.png" alt="Certificado Python 3 Parte 1: Introdução à nova versão da linguagem" />
+  <img src=".github/certificado_python-3-introducao-a-nova-versao-da-linguagem.png" alt="Certificado Python 3 Parte 1: Introdução à nova versão da linguagem" />
 </a>
 
 <br />
 <br />
 
 <a href="https://cursos.alura.com.br/certificate/gustavo-willemann/python-3-avancando-na-linguagem">
-  <img src=".github/certificado_parte_2.png" alt="Certificado Python 3 Parte 2: Avançando na linguagme" />
+  <img src=".github/certificado_python-3-avancando-na-linguagem.png" alt="Certificado Python 3 Parte 2: Avançando na linguagme" />
 </a>
